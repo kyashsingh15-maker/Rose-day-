@@ -1,0 +1,77 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Rose Day ❤️</title><style>
+body {
+    margin:0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg,#ff4b5c,#ff758c,#ffb6c1);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+    overflow:hidden;
+}
+
+.card {
+    background: rgba(255,255,255,0.15);
+    padding:40px;
+    border-radius:25px;
+    backdrop-filter: blur(12px);
+    box-shadow:0 10px 40px rgba(0,0,0,0.3);
+    max-width:420px;
+    animation: fadeIn 1.5s ease;
+}
+
+h1 {font-size:38px;margin-bottom:10px;}
+p {font-size:18px;line-height:1.6;}
+
+.rose {
+    font-size:70px;
+    animation: float 2s infinite alternate ease-in-out;
+}
+
+button {
+    margin-top:25px;
+    padding:12px 30px;
+    border:none;
+    border-radius:30px;
+    font-size:18px;
+    cursor:pointer;
+    background:white;
+    color:#ff4b5c;
+    transition:.3s;
+}
+
+button:hover {
+    transform: scale(1.12);
+}
+
+@keyframes float {
+    from { transform: translateY(0); }
+    to { transform: translateY(-12px); }
+}
+
+@keyframes fadeIn {
+    from { opacity:0; transform: translateY(30px); }
+    to { opacity:1; transform: translateY(0); }
+}
+</style></head><body><div class="card">
+    <div class="rose">🌹</div>
+    <h1>Happy Rose Day</h1><p>
+    You are the most beautiful part of my life ❤️<br>
+    Like this rose, you make everything brighter.<br>
+    Thank you for being you.
+</p>
+
+<button onclick="showMessage()">Open Special Message 💌</button>
+
+</div><script>
+function showMessage(){
+    alert("No matter what happens, you’ll always be special to me ❤️ Happy Rose Day 🌹");
+}
+</script></body>
+</html>
